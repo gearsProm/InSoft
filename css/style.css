@@ -258,6 +258,8 @@ align-items:center;
 	line-height: 24px;
 	border-bottom: 4px solid #FFFFFF;
 	margin-right: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 .page__context-bootom {
 	display: inline-block;
@@ -390,9 +392,6 @@ color: #8E9AA5;
 }
 .page__context-more {
 }
-.page__context-text {
-	
-}
 .page__context-bootom {
 }
 .block-project__detail {
@@ -445,13 +444,14 @@ color: #8E9AA5;
 	color: #8E9AA5;
 }
 .block-project__context-text {
-	font-family: 'AvenirNextCyr';
 	display: inline;
 	width: 60px;
 	font-weight: 750;
 	font-size: 12px;
 	line-height: 24px;
-border-bottom: 4px solid #1C2ECC;
+	border-bottom: 4px solid #1C2ECC;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 .block-project__context-text--g {
 	display: inline;
@@ -558,8 +558,6 @@ line-height: 24px;
 }
 .page__context-more {
 }
-.page__context-text {
-}
 .page__context-bootom {
 }
 /*----------------------*/
@@ -584,12 +582,23 @@ padding-bottom: 43px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 961px) {
+	.page-news__news {
+		grid-template-columns: repeat(2, 1fr);
+}
 .page-news__news-item {
 	border-bottom: 2px solid #E3E5EE;
 	padding-bottom: 64px;
 	margin: 0 40px 0 0;
 }
+@media (max-width: 961px) {
+	.page-news__news-item:last-child  {
+		display: none;
+}
 .news-item__foto {
+
+}
+.news-item__foto img {
 	width:100%;
 	object-fit:cover;
 }
@@ -629,9 +638,6 @@ padding-bottom: 16px;
 }
 .page__context-more {
 }
-.page__context-text {
-
-}
 .page__context-bootom {
 }
 .page-news__support {
@@ -668,8 +674,6 @@ font-size: 16px;
 line-height: 24px;
 }
 .page__context-more {
-}
-.page__context-text {
 }
 .page__context-bootom {
 }
